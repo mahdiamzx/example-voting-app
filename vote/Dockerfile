@@ -4,7 +4,7 @@ FROM python:3.9-slim
 
 # Set the application directory
 WORKDIR /app
-
+RUN apt update
 # Install our requirements.txt
 COPY requirements.txt /app/requirements.txt
 RUN pip install -r requirements.txt
